@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
+
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(177,159,157, 1);
+  overflow-x: hidden;
+  background-color: #5Bb4C4;   
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+}
+
+#navbar {
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  position: fixed;
+}
+
+ul {
+  margin: 0;
+  padding: 1em 2em;
+  list-style: none; 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2em;  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#welcome {  
+  background-color: #FB9B50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+#work {
+  width: 100vw;
+  background-color: #5Bb4C4; 
+  display: flex;
+  flex-direction: column; 
+}
+
+h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #193A6F;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;  
+}
+
+#projects {
+  width: 100vw;
+  padding: 1em 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 3em;  
+}
+
+.project-tile {
+  width: 360px;
+}
+
+.project-tile  img{
+  width: 360px;
+  height: auto;  
+}
+
+.project-tile figcaption {
+  text-align: center;
+  background-color: #11224D;
+  padding: 1em 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#show-all {
+  background-color: #11224D;
+  font-size: 18px;
+  font-weight: bold;
+  color: inherit;
+  align-self: center;
+  border: none;
+  padding: 1em 2em;
+  margin: 1em auto 5em auto;
+}
+
+i {
+  color: inherit;
+}
+
+#contact {
+  height: 20em;
+  background-color: #193A6F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact p {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#profile-link {
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    justify-content: center;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;  
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+  } 
+
+}
